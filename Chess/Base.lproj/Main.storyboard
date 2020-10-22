@@ -1,24 +1,314 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZm-eh-m8A">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chess-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QF3-sM-9j6">
+                                <rect key="frame" x="0.0" y="68" width="220" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="hkC-xk-6gA" kind="show" id="T6g-Cm-Nhf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="King" translatesAutoresizingMaskIntoConstraints="NO" id="Y8A-Ai-HFj">
+                                <rect key="frame" x="0.0" y="68" width="213" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Queen" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-Gx-MJF">
+                                <rect key="frame" x="228" y="44" width="186" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyn-lH-CbG">
+                                <rect key="frame" x="228" y="49" width="186" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Kaf-Nj-BkD" kind="show" id="9Qi-d0-eXW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bishop" translatesAutoresizingMaskIntoConstraints="NO" id="e9V-xn-C91">
+                                <rect key="frame" x="7" y="276" width="213" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Knight" translatesAutoresizingMaskIntoConstraints="NO" id="f0W-Ou-TRL">
+                                <rect key="frame" x="228" y="276" width="186" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0W-vR-BxN">
+                                <rect key="frame" x="0.0" y="276" width="220" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="CPG-H6-oEs" kind="show" id="OiZ-0d-I5u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCl-Nu-RjD">
+                                <rect key="frame" x="228" y="276" width="186" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="EhK-ki-KCU" kind="show" id="NJo-TA-U1u"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Castle" translatesAutoresizingMaskIntoConstraints="NO" id="OC6-tv-d7u">
+                                <rect key="frame" x="7" y="513" width="206" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pawn" translatesAutoresizingMaskIntoConstraints="NO" id="tQO-u1-8rY">
+                                <rect key="frame" x="221" y="513" width="193" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-4O-t5A">
+                                <rect key="frame" x="0.0" y="526" width="213" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="aqK-Eu-fzQ" kind="show" id="vRl-Us-B5c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1Z-Mr-a82">
+                                <rect key="frame" x="228" y="526" width="186" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="DfE-Hn-iQS" kind="show" id="UR7-Oy-iyA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chess" id="OVx-Ip-4TX"/>
+                </viewController>
             </objects>
+            <point key="canvasLocation" x="926.08695652173924" y="79.891304347826093"/>
+        </scene>
+        <!--King-->
+        <scene sceneID="s2w-YS-Tbt">
+            <objects>
+                <viewController id="hkC-xk-6gA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Non-i6-lpF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="King" translatesAutoresizingMaskIntoConstraints="NO" id="qIU-AK-Bf9">
+                                <rect key="frame" x="20" y="66" width="374" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r7D-7J-2HD">
+                                <rect key="frame" x="20" y="322" width="374" height="394"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Король (King) — это самая главная фигура на «поле боя», вокруг которой и строится игра. Ведь конец игры наступает именно тогда, когда повержен король соперника. Несмотря на свой статус, король довольно ограничен в перемещениях, он может передвигаться всего на одну клеточку в любую сторону. Но при этом у него есть преимущество — возможность рокировки. Этот термин означает совместный ход с ладьей, в ходе которого король отправляется в более безопасно место.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WDP-s3-bvC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="King" id="91v-Nh-2lB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6s9-wh-zoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="-1101"/>
+        </scene>
+        <!--Queen-->
+        <scene sceneID="X2Z-SI-Gwm">
+            <objects>
+                <viewController id="Kaf-Nj-BkD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8TR-KS-6aG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Queen" translatesAutoresizingMaskIntoConstraints="NO" id="4wR-Uk-tjT">
+                                <rect key="frame" x="20" y="75" width="374" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0CO-kR-DpA">
+                                <rect key="frame" x="20" y="317" width="374" height="394"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Ферзь (Queen) — это самая активная, сильная и вторая по значимости фигура во время игры. Ее возможности в траекториях движения наиболее разнообразны. Ферзь может ходить как вверх и вниз по доске, так и влево и вправо, а также и по белым, и по черным диагоналям. Королева — тяжела фигура с точки зрения противника, ведь она обладает большими возможностями для защиты короля и практически в любой момент может оказаться в нужном месте. Выглядит ферзь обычно почти так же, как и король, но немного ниже и с часто с небольшим шариком на верхушке.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="clW-S2-6G6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Queen" id="kes-py-oVb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afj-Yg-MLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="-413"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xch-w3-zF3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fZm-eh-m8A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zWb-V2-aY9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JY7-ya-X5P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAe-7M-wjn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.891304347826093"/>
+        </scene>
+        <!--Bishop-->
+        <scene sceneID="jbc-WX-UyO">
+            <objects>
+                <viewController id="CPG-H6-oEs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0UN-Qo-2at">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bishop" translatesAutoresizingMaskIntoConstraints="NO" id="58T-fo-aRS">
+                                <rect key="frame" x="20" y="75" width="374" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Jh-Ai-tdq">
+                                <rect key="frame" x="20" y="317" width="374" height="394"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Слон (Bishop) — тоже парная фигура, считается легкой, обычно выглядит как невысокая башенка с заостренной капелькой. Эта форма может напомнить одежды монаха — так оно и есть. Появилась фигурка именно благодаря тому, что католические священники увлекались шахматами и привнесли в нее что-то свое.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MZP-Rx-fvs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bishop" id="0ED-v9-WWK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="345-B3-tOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="284"/>
+        </scene>
+        <!--Knight-->
+        <scene sceneID="N5N-LL-j8p">
+            <objects>
+                <viewController id="EhK-ki-KCU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vIY-Iw-EFh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Knight" translatesAutoresizingMaskIntoConstraints="NO" id="Xk2-74-1ts">
+                                <rect key="frame" x="20" y="75" width="374" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sj9-9o-sgm">
+                                <rect key="frame" x="20" y="317" width="374" height="394"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Конь (Knight) — обычно выглядит, как соответствующее животное. Его особенность — необычная манера передвижения, а именно буквой «Г» в любую сторону. Конь легко перепрыгивает через препятствия (фигуры соперника) и в начале игры стоит рядом с ладьей.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PmW-b5-AxA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Knight" id="uOy-eu-gEq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaC-G4-PDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="1044"/>
+        </scene>
+        <!--Castle-->
+        <scene sceneID="Xdt-Sy-isZ">
+            <objects>
+                <viewController id="aqK-Eu-fzQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="od5-Bq-XPh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Castle" translatesAutoresizingMaskIntoConstraints="NO" id="tKT-ex-e47">
+                                <rect key="frame" x="20" y="75" width="374" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Biy-Kt-9ei">
+                                <rect key="frame" x="20" y="317" width="374" height="394"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Ладья (Castle) — эта фигурка двигается только вертикально или горизонтально и ограничена препятствиями. На старте у игрока есть две ладьи, которые размещаются по краям поля. Иногда любители называют их «турами», но опытным игрокам это «режет» слух.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tKN-ty-EZH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Castle" id="6yi-yO-cCh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7e-3K-F28" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="1044"/>
+        </scene>
+        <!--Pawn-->
+        <scene sceneID="Xon-WZ-slC">
+            <objects>
+                <viewController id="DfE-Hn-iQS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WE6-jU-TK3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pawn" translatesAutoresizingMaskIntoConstraints="NO" id="f1T-jo-7Xe">
+                                <rect key="frame" x="20" y="75" width="374" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w0v-Fy-buu">
+                                <rect key="frame" x="20" y="317" width="374" height="394"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Пешка (Pawn) — это шахматный солдат, который первым рвется в бой, открывает игру. У каждого есть по 8 пешек. Ходят они наиболее просто — по одной клеточке и только вперед, хотя в качестве первого хода могут перепрыгнуть через клеточку, — а сбивают вражеские фигурки только наискосок. Пешки играют важную роль, они обороняют другие фигуры, а дойдя до противоположного края доски могут вернуть вместо себя любую сбитую ранее фигурку — и ферзя, и ладью, и коня. Исключение здесь составляет только король.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jdD-Uc-wwr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pawn" id="AgZ-61-vkd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLT-X5-AHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1193" y="1043"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bishop" width="63.333332061767578" height="130"/>
+        <image name="Castle" width="63.333332061767578" height="130"/>
+        <image name="King" width="63.333332061767578" height="130"/>
+        <image name="Knight" width="63.333332061767578" height="130"/>
+        <image name="Pawn" width="63.333332061767578" height="130"/>
+        <image name="Queen" width="63.333332061767578" height="130"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

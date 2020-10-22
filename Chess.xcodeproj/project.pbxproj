@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		0623C5A32541825B00BFAD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C5A22541825B00BFAD03 /* AppDelegate.swift */; };
 		0623C5A52541825B00BFAD03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C5A42541825B00BFAD03 /* SceneDelegate.swift */; };
-		0623C5A72541825B00BFAD03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C5A62541825B00BFAD03 /* ViewController.swift */; };
 		0623C5AA2541825B00BFAD03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0623C5A82541825B00BFAD03 /* Main.storyboard */; };
 		0623C5AC2541825D00BFAD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0623C5AB2541825D00BFAD03 /* Assets.xcassets */; };
 		0623C5AF2541825D00BFAD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0623C5AD2541825D00BFAD03 /* LaunchScreen.storyboard */; };
+		0623C5BD2541976F00BFAD03 /* Screenshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0623C5B92541976E00BFAD03 /* Screenshot1.png */; };
+		0623C5BE2541976F00BFAD03 /* Screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0623C5BA2541976E00BFAD03 /* Screenshot2.png */; };
+		0623C5BF2541976F00BFAD03 /* Screenshot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0623C5BB2541976E00BFAD03 /* Screenshot3.png */; };
+		0623C5C02541976F00BFAD03 /* Screenshot4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0623C5BC2541976F00BFAD03 /* Screenshot4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0623C59F2541825B00BFAD03 /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0623C5A22541825B00BFAD03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0623C5A42541825B00BFAD03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0623C5A62541825B00BFAD03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0623C5A92541825B00BFAD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0623C5AB2541825D00BFAD03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0623C5AE2541825D00BFAD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0623C5B02541825D00BFAD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0623C5B92541976E00BFAD03 /* Screenshot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot1.png; sourceTree = "<group>"; };
+		0623C5BA2541976E00BFAD03 /* Screenshot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot2.png; sourceTree = "<group>"; };
+		0623C5BB2541976E00BFAD03 /* Screenshot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot3.png; sourceTree = "<group>"; };
+		0623C5BC2541976F00BFAD03 /* Screenshot4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		0623C5A12541825B00BFAD03 /* Chess */ = {
 			isa = PBXGroup;
 			children = (
+				0623C5B8254196F200BFAD03 /* Screenshots */,
 				0623C5A22541825B00BFAD03 /* AppDelegate.swift */,
 				0623C5A42541825B00BFAD03 /* SceneDelegate.swift */,
-				0623C5A62541825B00BFAD03 /* ViewController.swift */,
 				0623C5A82541825B00BFAD03 /* Main.storyboard */,
 				0623C5AB2541825D00BFAD03 /* Assets.xcassets */,
 				0623C5AD2541825D00BFAD03 /* LaunchScreen.storyboard */,
 				0623C5B02541825D00BFAD03 /* Info.plist */,
 			);
 			path = Chess;
+			sourceTree = "<group>";
+		};
+		0623C5B8254196F200BFAD03 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				0623C5B92541976E00BFAD03 /* Screenshot1.png */,
+				0623C5BA2541976E00BFAD03 /* Screenshot2.png */,
+				0623C5BB2541976E00BFAD03 /* Screenshot3.png */,
+				0623C5BC2541976F00BFAD03 /* Screenshot4.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +141,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0623C5BE2541976F00BFAD03 /* Screenshot2.png in Resources */,
 				0623C5AF2541825D00BFAD03 /* LaunchScreen.storyboard in Resources */,
+				0623C5BD2541976F00BFAD03 /* Screenshot1.png in Resources */,
+				0623C5BF2541976F00BFAD03 /* Screenshot3.png in Resources */,
 				0623C5AC2541825D00BFAD03 /* Assets.xcassets in Resources */,
+				0623C5C02541976F00BFAD03 /* Screenshot4.png in Resources */,
 				0623C5AA2541825B00BFAD03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0623C5A72541825B00BFAD03 /* ViewController.swift in Sources */,
 				0623C5A32541825B00BFAD03 /* AppDelegate.swift in Sources */,
 				0623C5A52541825B00BFAD03 /* SceneDelegate.swift in Sources */,
 			);
